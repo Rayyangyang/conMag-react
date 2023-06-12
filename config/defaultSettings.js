@@ -5,7 +5,7 @@ const proSettings = {
   fixedHeader: true,
   fixSiderbar: true,
   colorWeak: false,
-  title: '秒告',
+  title: 'test',
   pwa: false,
   logo: '/admin/logo.png',
 };

@@ -1,5 +1,5 @@
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { LoginFormPage, ProFormText } from '@ant-design/pro-components';
+import { LoginForm, ProFormText } from '@ant-design/pro-components';
 import { Alert, Checkbox, Form, Radio } from 'antd';
 import { useEffect, useRef, useState } from 'react';
 
@@ -54,10 +54,11 @@ export default () => {
   return (
     <div className={styles.container} >
 
-      <LoginFormPage
+      <div>
+        <img src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" alt="" />
+      </div>
+      <LoginForm
         style={{ position: 'relative', zIndex: 2 }}
-        backgroundImageUrl="https://gw.alipayobjects.com/zos/rmsportal/FfdJeJRQWjEeGTpqgBKj.png"
-        subTitle="做大做强 再创辉煌"
         logo={<img alt="logo" src={settings.logo} />}
         title={`${settings.title}`}
         onFinish={handleSubmit}
@@ -90,7 +91,7 @@ export default () => {
 
 
 
-      </LoginFormPage>
+      </LoginForm>
 
       <GlobalModal
         open={modalVisible}
